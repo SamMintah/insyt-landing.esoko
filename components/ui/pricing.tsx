@@ -53,7 +53,7 @@ export function Pricing({
         particleCount: 50,
         spread: 60,
         origin: { x: x / window.innerWidth, y: y / window.innerHeight },
-        colors: ["#1252A6", "#E3611C", "#172B40", "#F7F5F0"],
+        colors: ["#065D9B", "#E3611C", "#172B40", "#F7F5F0"],
         ticks: 200,
         gravity: 1.2,
         decay: 0.94,
