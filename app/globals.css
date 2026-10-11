@@ -38,6 +38,7 @@ button { cursor: pointer; }
 #how .text-white\/55 { color: #637184; }
 #how .border-white\/10 { border-color: #d7dfe7; }
 #how .border-white\/20 { border-color: #b8c6d4; }
+#how .bg-orange.text-white { color: #fff; }
 .walkthrough-shell { overflow: hidden; border: 1px solid rgba(255,255,255,.22); border-radius: 18px; background: rgba(7,31,69,.72); box-shadow: 0 30px 90px rgba(0,26,64,.38); backdrop-filter: blur(12px); }
 .walkthrough-toolbar, .walkthrough-controls { display: flex; align-items: center; gap: 12px; padding: 12px 15px; }
 .walkthrough-toolbar { justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,.12); }
@@ -75,6 +76,11 @@ button { cursor: pointer; }
 .nav-cta svg, .hero-button svg, .hero-link svg { width: 15px; height: 15px; }
 .hero-link { display: inline-flex; align-items: center; gap: 5px; color: rgba(255,255,255,.75); font-size: 12px; font-weight: 700; transition: color .2s; }
 .hero-link:hover { color: white; }
+.app-phone-shot { width: min(100%, 380px); transform: perspective(1500px) rotateY(-13deg) rotateX(3deg) rotate(1.5deg); transform-origin: center; transition: transform .5s ease; }
+.app-phone-shot:hover { transform: perspective(1500px) rotateY(-6deg) rotateX(1deg) rotate(0deg); }
+.app-phone-glow { position: absolute; top: 50%; left: 50%; z-index: 0; width: 92%; max-width: 470px; aspect-ratio: 1 / 1; transform: translate(-50%, -50%); border-radius: 999px; background: radial-gradient(circle, rgba(18,82,166,.32), rgba(18,82,166,.1) 55%, transparent 72%); filter: blur(18px); pointer-events: none; }
+@media (max-width: 1023px) { .app-phone-shot { width: min(100%, 310px); } }
+@media (max-width: 640px) { .app-phone-shot { width: min(100%, 255px); transform: perspective(1200px) rotateY(-10deg) rotateX(2deg); } }
 .dashboard-perspective { transform: perspective(1800px) rotateY(-4deg) rotateX(2deg); transform-origin: center; }
 .dashboard-shell { overflow: hidden; border: 1px solid rgba(218,230,242,.9); border-radius: 16px; background: #fff; box-shadow: 0 30px 90px rgba(0, 26, 64, .3), 0 0 0 8px rgba(255,255,255,.06); color: #172B40; }
 .hero-section header { backdrop-filter: blur(10px); }
